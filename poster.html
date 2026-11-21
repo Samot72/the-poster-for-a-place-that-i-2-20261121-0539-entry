@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Lumara — Where the Tide Keeps the Time</title>
+<style>
+  html, body { margin:0; padding:0; width:1024px; height:1024px; overflow:hidden; background:#eadfc6; }
+  svg { display:block; }
+  .headline { font-family:"DejaVu Sans", "Liberation Sans", Arial, sans-serif; font-weight:700; fill:#14243e; }
+  .sub { font-family:"DejaVu Sans", "Liberation Sans", Arial, sans-serif; font-weight:700; fill:#0f5f63; }
+  .foot { font-family:"DejaVu Sans", "Liberation Sans", Arial, sans-serif; font-weight:700; fill:#f6ecd4; }
+</style>
+</head>
+<body>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- aged paper -->
+  <rect x="0" y="0" width="1024" height="1024" fill="#eadfc6"/>
+  <rect x="52" y="52" width="920" height="920" fill="#f6ecd4"/>
+
+  <!-- sun -->
+  <circle cx="512" cy="512" r="252" fill="#e4572e"/>
+  <circle cx="512" cy="512" r="252" fill="none" stroke="#14243e" stroke-width="5"/>
+  <!-- deco sky arcs -->
+  <path d="M 150 330 Q 240 300 330 330" fill="none" stroke="#147a7d" stroke-width="7" stroke-linecap="round"/>
+  <path d="M 694 322 Q 784 292 874 322" fill="none" stroke="#147a7d" stroke-width="7" stroke-linecap="round"/>
+  <!-- gulls -->
+  <path d="M 196 268 q 16 -14 32 0 q 16 -14 32 0" fill="none" stroke="#14243e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 786 282 q 13 -11 26 0 q 13 -11 26 0" fill="none" stroke="#14243e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 836 300 q 10 -9 20 0 q 10 -9 20 0" fill="none" stroke="#14243e" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- headline -->
+  <text class="headline" x="524" y="168" text-anchor="middle" font-size="142" letter-spacing="20">LUMARA</text>
+  <g stroke="#e4572e" stroke-width="5" stroke-linecap="round">
+    <line x1="212" y1="196" x2="452" y2="196"/>
+    <line x1="572" y1="196" x2="812" y2="196"/>
+  </g>
+  <rect x="502" y="186" width="20" height="20" transform="rotate(45 512 196)" fill="#e4572e"/>
+  <text class="sub" x="515" y="240" text-anchor="middle" font-size="29" letter-spacing="7">WHERE THE TIDE KEEPS THE TIME</text>
+
+  <!-- lighthouse beam (behind lighthouse, over sun) -->
+  <polygon points="726,404 380,330 420,452" fill="#f6ecd4" opacity="0.55"/>
+
+  <!-- city platform / hulls -->
+  <g stroke="#14243e" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <!-- stilts -->
+    <line x1="238" y1="612" x2="222" y2="690"/>
+    <line x1="330" y1="612" x2="330" y2="694"/>
+    <line x1="470" y1="612" x2="470" y2="694"/>
+    <line x1="610" y1="612" x2="610" y2="690"/>
+    <line x1="700" y1="612" x2="716" y2="690"/>
+    <!-- main hull deck -->
+    <path d="M 196 612 L 788 612 L 748 652 L 240 652 Z" fill="#8a4b2a"/>
+  </g>
+
+  <!-- city buildings -->
+  <g stroke="#14243e" stroke-width="5" stroke-linejoin="round">
+    <!-- left house -->
+    <rect x="232" y="520" width="92" height="92" fill="#f6ecd4"/>
+    <polygon points="222,522 278,472 334,522" fill="#147a7d"/>
+    <rect x="264" y="556" width="26" height="56" fill="#e4572e"/>
+    <!-- dome house centre-left -->
+    <rect x="336" y="516" width="110" height="96" fill="#e9a13b"/>
+    <path d="M 336 516 A 55 55 0 0 1 446 516 Z" fill="#0f5f63"/>
+    <line x1="391" y1="436" x2="391" y2="460" stroke="#14243e" stroke-width="5"/>
+    <circle cx="391" cy="430" r="7" fill="#e4572e" stroke="none"/>
+    <rect x="378" y="552" width="26" height="60" fill="#14243e"/>
+    <!-- centre tower house -->
+    <rect x="458" y="486" width="84" height="126" fill="#f6ecd4"/>
+    <polygon points="448,488 500,438 552,488" fill="#e4572e"/>
+    <rect x="486" y="540" width="28" height="72" fill="#147a7d"/>
+    <circle cx="500" cy="512" r="12" fill="#147a7d"/>
+    <!-- right dome house -->
+    <rect x="554" y="524" width="100" height="88" fill="#e9a13b"/>
+    <path d="M 554 524 A 50 48 0 0 1 654 524 Z" fill="#147a7d"/>
+    <rect x="592" y="556" width="24" height="56" fill="#14243e"/>
+    <!-- small house by lighthouse -->
+    <rect x="660" y="544" width="66" height="68" fill="#f6ecd4"/>
+    <polygon points="652,546 693,506 734,546" fill="#0f5f63"/>
+  </g>
+  <!-- windows -->
+  <g fill="#14243e">
+    <rect x="246" y="536" width="14" height="18"/><rect x="296" y="536" width="14" height="18"/>
+    <rect x="352" y="534" width="14" height="18"/><rect x="416" y="534" width="14" height="18"/>
+    <rect x="470" y="500" width="12" height="16"/><rect x="518" y="500" width="12" height="16"/>
+    <rect x="568" y="542" width="13" height="17"/><rect x="624" y="542" width="13" height="17"/>
+    <rect x="678" y="560" width="12" height="15"/>
+  </g>
+  <!-- laundry line -->
+  <path d="M 334 548 Q 391 574 448 548" fill="none" stroke="#14243e" stroke-width="3.5"/>
+  <g stroke="#14243e" stroke-width="3" stroke-linejoin="round">
+    <polygon points="356,556 374,560 372,584 358,580" fill="#e4572e"/>
+    <polygon points="384,562 402,562 400,588 386,588" fill="#f6ecd4"/>
+    <polygon points="410,558 428,554 430,578 412,582" fill="#147a7d"/>
+  </g>
+
+  <!-- lighthouse -->
+  <g stroke="#14243e" stroke-width="5" stroke-linejoin="round">
+    <polygon points="724,612 742,420 774,420 792,612" fill="#f6ecd4"/>
+    <polygon points="733,516 783,516 778,462 738,462" fill="#e4572e"/>
+    <rect x="736" y="388" width="44" height="34" fill="#e9a13b"/>
+    <polygon points="728,390 758,362 788,390" fill="#14243e"/>
+  </g>
+  <circle cx="758" cy="405" r="8" fill="#14243e"/>
+
+  <!-- sea: layered waves -->
+  <path d="M 52 668 Q 116 638 180 668 T 308 668 T 436 668 T 564 668 T 692 668 T 820 668 T 948 668 L 972 668 L 972 886 L 52 886 Z" fill="#1b989c"/>
+  <path d="M 52 716 Q 116 686 180 716 T 308 716 T 436 716 T 564 716 T 692 716 T 820 716 T 948 716 L 972 716 L 972 886 L 52 886 Z" fill="#147a7d"/>
+  <!-- wave crests -->
+  <g fill="none" stroke="#f6ecd4" stroke-width="5" stroke-linecap="round" opacity="0.8">
+    <path d="M 120 700 q 22 -14 44 0"/><path d="M 330 692 q 22 -14 44 0"/>
+    <path d="M 600 700 q 22 -14 44 0"/><path d="M 830 692 q 22 -14 44 0"/>
+  </g>
+
+  <!-- red-sailed boat -->
+  <g stroke="#14243e" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+    <line x1="368" y1="742" x2="368" y2="612"/>
+    <polygon points="378,620 378,736 470,736" fill="#d93a22"/>
+    <polygon points="358,646 358,736 292,736" fill="#f6ecd4"/>
+    <path d="M 268 742 L 486 742 L 452 788 L 300 788 Z" fill="#14243e"/>
+  </g>
+  <polygon points="368,610 396,618 368,626" fill="#e9a13b" stroke="#14243e" stroke-width="3.5" stroke-linejoin="round"/>
+
+  <!-- foreground sea -->
+  <path d="M 52 788 Q 116 758 180 788 T 308 788 T 436 788 T 564 788 T 692 788 T 820 788 T 948 788 L 972 788 L 972 886 L 52 886 Z" fill="#0f5f63"/>
+  <g fill="none" stroke="#f6ecd4" stroke-width="5" stroke-linecap="round" opacity="0.75">
+    <path d="M 150 828 q 22 -14 44 0"/><path d="M 520 838 q 22 -14 44 0"/><path d="M 770 824 q 22 -14 44 0"/>
+  </g>
+
+  <!-- footer strip -->
+  <rect x="52" y="886" width="920" height="86" fill="#14243e"/>
+  <text class="foot" x="514" y="922" text-anchor="middle" font-size="20" letter-spacing="2">VIRELAI COASTAL RAILWAY — THREE TRAINS DAILY WITH THE EBB</text>
+  <text class="foot" x="512" y="954" text-anchor="middle" font-size="19" letter-spacing="5" fill="#e9a13b">RETURN FARE: 12 CROWNS</text>
+
+  <!-- double border frame -->
+  <rect x="28" y="28" width="968" height="968" fill="none" stroke="#14243e" stroke-width="6"/>
+  <rect x="44" y="44" width="936" height="936" fill="none" stroke="#14243e" stroke-width="2"/>
+</svg>
+</body>
+</html>
